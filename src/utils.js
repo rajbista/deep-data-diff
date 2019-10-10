@@ -9,9 +9,15 @@
 /**
  *  Returns the type of given input. 
  */
-const findType = function (data) {
-
-  return typeof data;
+const getType = function (data) {
+  if (typeof data === 'string') return 'string';
+  else if (typeof data === 'boolean') return 'boolean';
+  else if (typeof data === 'number') return 'number';
+  else if (typeof data === 'symbol') return 'symbol';
+  else if (data instanceof Date) return 'date';
+  else if (Array.isArray(data)) return 'array';
+  else if (data instanceof Object) return 'object';
+  else throw Error('Invalid type');
 }
 
 /**
@@ -22,4 +28,4 @@ const isFalsy = function (data) {
   return true;
 }
 
-module.exports = { findType, isFalsy };
+module.exports = { getType, isFalsy };

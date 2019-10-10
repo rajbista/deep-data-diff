@@ -16,9 +16,10 @@
  * @param {second input} s 
  */
 
+const utils = require('./utils');
+
 function Difference(f, s) {
   const map = new Map()
 
 }
-
 module.exports = Difference;

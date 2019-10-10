@@ -4,7 +4,7 @@
   "description": "Finds difference between two valid js data structures in any level. It returns an array of objects - each object includes four fields (path, operation, beforeValue, afterValue).",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "./node_modules/mocha/bin/mocha test/*.spec.js"
   },
   "repository": {
     "type": "git",
