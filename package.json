@@ -4,7 +4,7 @@
   "description": "Finds difference between two valid js data structures in any level. It returns an array of objects - each object includes four fields (path, operation, beforeValue, afterValue).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha test"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/rajbista/deep-data-diff/issues"
   },
-  "homepage": "https://github.com/rajbista/deep-data-diff#readme"
+  "homepage": "https://github.com/rajbista/deep-data-diff#readme",
+  "dependencies": {
+    "chai": "4.2.0",
+    "mocha": "6.2.1"
+  }
 }
